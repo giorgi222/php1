@@ -10,18 +10,23 @@
 			<input type="text" name="saxeli" id="saxeli" value="">
 			<input type="text" name="gvari" value="">
 			<input type="password" name="paroli" value="">
-			<button type="submit" id="btn">შესვლა</button>
-			<button type="button">რეგისტრაცია</button>
+			<button type="submit" id="login">შესვლა</button>
+			<button type="button" id="register">რეგისტრაცია</button>
 
 		</form>
 		<script type="text/javascript">
+		
+			var login=document.getElementById('login')
+			var register=document.getElementById('register')
 
-			var buton=document.getElementById('btn')
-			buton.addEventListener('click', function(){
+			login.addEventListener('click', function(){
 				var saxeli=document.getElementById('saxeli')
 				localStorage.setItem('saxeli', saxeli.value)
 			})
-
+			register.addEventListener('click', function(){
+				window.location.href="register.php"
+			})
+			
 		</script>
 	</body>
 </html>

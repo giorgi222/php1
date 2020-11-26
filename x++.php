@@ -62,6 +62,13 @@
 					counter=0;		
 				}
 				alert ("archeuli pasuxi aris :" + ans + ', ' + "swori pasuxi aris:" + cans + ', ' + "raundis indeqsi aris :" + counter);
+				var answer = {
+					"swori pasuxi": cans,
+					"useris pasuxi": ans,
+					"counter": counter,
+				}
+				var answerData = JSON.stringify(answer)
+
 				window.location.href="x++.php"
 			})
 		</script>
